@@ -1,0 +1,36 @@
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.list {
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 20px;
+}
+
+.record {
+    border: 2px solid green;
+    background-color: lime;
+}
+
+.success {
+    border: 2px solid orange;
+    background-color: gold;
+}
+.warning {
+    border: 2px solid red;
+    background-color: hotpink;
+}
+
+.record,
+.success,
+.warning {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

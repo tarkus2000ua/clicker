@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Top results for {{result.time}} sec game</h2>
+    <ol class = "list">
+        <li *ngFor="let result of resultTable">
+            {{result.name}} - {{result.result}}
+        </li>
+    </ol>
+    <div class="record" *ngIf="isNewRecord">Congratulations {{result.name}}!!! You set new record for {{result.time}} sec game - {{result.result}} clicks</div>
+    <div class="success" *ngIf="isSuccess && !isNewRecord">You entered to top results for {{result.time}} sec game with {{result.result}} clicks</div>
+    <div class="warning" *ngIf="!isSuccess">{{result.name}}, your result is bad, you have to practice more</div>
+    <button (click)="playAgain()" class="btn">Play again</button>
+</div>

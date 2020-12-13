@@ -1,0 +1,39 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.btn {
+    background-color: lime;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.btn.pressed {
+    background-color: lightgray;
+}
+
+.field {
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.title,
+.stats {
+    text-align: center;
+}
+
+.duration h3 {
+    margin-top: 0;
+}
+
+.duration ul li {
+    list-style: none;
+}

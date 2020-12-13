@@ -1,0 +1,20 @@
+<div class="container">
+  <h2 class="title">Hello, {{name}}!</h2>
+  <div class="field">
+    <div class="btnGroup"> 
+        <button [ngClass]="{btn: true, pressed: isGameStarted}"
+          (click)="startGame()">Click me!</button>
+          <div>Time: {{timeLeft}} sec left</div>
+    </div>
+    <div class="duration">
+        <h3>Choose game duration:</h3>
+        <ul>
+            <li *ngFor="let item of timeList; let first = first;">
+              <input type="radio" [(ngModel)]="radioSelected" [checked]="first" name="list_name" value="{{item.value}}" (change)="setTime(item.value)"/> 
+              {{item.name}}
+            </li>
+        </ul>
+    </div>
+  </div>
+  <div class="stats">You have made {{clickCounter}} clicks</div>
+</div>
