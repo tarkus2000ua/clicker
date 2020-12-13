@@ -12,6 +12,6 @@ branches:
 
 deploy:
   provider: heroku
-  app: clicker
+  app: clicker2020
   api_key:
     secure: "98517bdc-daf4-4dfd-94e0-d1b568809e34"
