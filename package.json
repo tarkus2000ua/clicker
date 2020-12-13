@@ -1,9 +1,9 @@
 {
-  "name": "clicker",
+  "name": "clicker2020",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "lint": "ng lint",
     "e2e": "ng e2e",
