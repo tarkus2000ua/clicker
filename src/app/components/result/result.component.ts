@@ -19,7 +19,7 @@ export class ResultComponent implements OnInit {
 
     ngOnInit() {
         const results = this.game.getResults();
-        this.resultTable = results.resultTable.sort((a,b) => b.result-a.result);
+        this.resultTable = results.resultTable.sort((a, b) => b.result - a.result);
         this.result = results.result;
         this.isNewRecord = results.isNewRecord;
         this.isSuccess = results.isSuccess;

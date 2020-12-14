@@ -11,7 +11,7 @@ export class GameService {
     resultTable10: IResult[] = [];
     resultTable15: IResult[] = [];
     name: string;
-    maxResultCount = 2;
+    maxResultCount = 5;
     isSuccess: boolean;
     isNewRecord: boolean;
 
